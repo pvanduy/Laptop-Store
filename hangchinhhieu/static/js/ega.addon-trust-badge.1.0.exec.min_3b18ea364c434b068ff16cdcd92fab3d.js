@@ -1,0 +1,1 @@
+(function(){"use strict";window.EgaGateway&&window.EGATrustBadgeSettings.general&&window.EGATrustBadgeSettings.general.enabled&&(window.egaTrustBadgeValid=!0,window.EgaGateway.init(egaTrustBadgeRegister))})();

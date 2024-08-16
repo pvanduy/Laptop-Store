@@ -1,0 +1,73 @@
+{% extends "home/base.html" %}
+{% block content %}
+{% load static %}
+<link href={%static 'js/style-customer.css'%} rel="stylesheet" type="text/css" media="all" />
+<main class="wrapperMain_content">
+    <div class="layout-account">
+        <div class="container">
+            <div class="wrapbox-content-account">
+                <div class="userbox customers_accountForm">
+                    <div class="header-page clearfix">
+                        <h1>Tạo tài khoản</h1>
+                    </div>
+
+                    <form accept-charset="UTF-8" action="https://hangchinhhieu.vn/account" id="create_customer" method="post">
+                        <input name="form_type" type="hidden" value="create_customer" />
+                        <input name="utf8" type="hidden" value="✓" />
+
+                        <div id="field-lastname" class="clearfix large_form">
+                            <label for="last_name" class="label icon-field"><i class="icon-login icon-user"></i></label>
+                            <input required="" type="text" value="" name="customer[last_name]" placeholder="Họ" id="last_name" class="text" size="30" />
+                        </div>
+                        <div id="field-firstname" class="clearfix large_form">
+                            <label for="first_name" class="label icon-field"><i class="icon-login icon-user"></i></label>
+                            <input required="" type="text" value="" name="customer[first_name]" placeholder="Tên" id="first_name" class="text" size="30" />
+                        </div>
+                        <div id="field-gender" class="clearfix large_form">
+                            <input id="radio1" type="radio" value="0" name="customer[gender]" />
+                            <label for="radio1">Nữ</label>
+                            <input id="radio2" type="radio" value="1" name="customer[gender]" />
+                            <label for="radio2">Nam</label>
+                        </div>
+                        <div id="field-birthday" class="clearfix large_form">
+                            <label for="birthday" class="label icon-field"><i class="icon-login icon-envelope"></i></label>
+                            <input type="text" value="" placeholder="mm/dd/yyyy" name="customer[birthday]" id="birthday" class="text" size="30" />
+                        </div>
+                        <div id="field-email" class="clearfix large_form">
+                            <label for="email" class="label icon-field"><i class="icon-login icon-envelope"></i></label>
+                            <input required="" type="email" value="" placeholder="Email" name="customer[email]" id="email" class="text" size="30" />
+                        </div>
+                        <div id="field-password" class="clearfix large_form large_form-mrb">
+                            <label for="password" class="label icon-field"><i class="icon-login icon-shield"></i></label>
+                            <input required="" type="password" value="" placeholder="Mật khẩu" name="customer[password]" id="password" class="password text" size="30" />
+                        </div>
+                        <div class="clearfix large_form sitebox-recaptcha">
+                            This site is protected by reCAPTCHA and the Google
+                            <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>
+                            and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+                        </div>
+                        <div class="clearfix custommer_account_action">
+                            <div class="action_bottom">
+                                <button class="btn button dark" type="submit">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="clearfix req_pass text-center">
+                            <a class="come-back" href="https://hangchinhhieu.vn/"><i class="fa fa-long-arrow-left"></i> Quay lại trang chủ</a>
+                        </div>
+
+                        <input
+                            id="2481ca087a5747d590a80a7d4dba299e"
+                            name="g-recaptcha-response"
+                            type="hidden"
+                            value="03AEkXODA8r8H1ExLs67uhMuV-jRtJ0uJFc2RTQ06QOExulFroume5Fk5lQgo0yKfweoLlv7CBA8HXowE7qdz02WHuYlnjZdzZbtVJMzboUq-tqlKlgncAwKI7ZDhilvB1lLZMsJfb0tx3tmsqpZbJAwk4B6_9OubGnsbsKiu7GPGiN2V5rxwfOGVkK862taAvixA8hulgsckKB9qNKwENGpywkKs2OL6apMtyjHL0M8yQcvL2V6DfE8LXj1_Z1LAdtrMg-XIQg26rPoYlSMdam-OHog81BKdNl7I8seH4C5-EwzGMRNbYdIqCLM-H8wexMV_hIxV3_4CcaQwMejw3fvIwcPHcOBR9i4wfyWKagIEWWwL81chYypsBNBOtbD63GnFBDAbUURsepziLGS9ovvrrhT11wsx_d1LZ_ine4RZlwt-oiVbGQpCpmFoRkprgQ_-0OAZ8S1ZMtM5aFV65sWENTd0X-AnO3qxiWxwZqBjMk_Vl1pp-s7BozUnpNItvbGHbxIHnYcs3"
+                        />
+                    </form>
+                </div>
+            </div>
+            <!-- #register -->
+            <!-- #customer-register -->
+        </div>
+    </div>
+</main>
+
+{% endblock %}

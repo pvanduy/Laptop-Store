@@ -1,0 +1,1 @@
+(function(){"use strict";window.EgaGateway&&window.EGASocialShareSettings.general&&window.EGASocialShareSettings.general.enabled&&(window.egaSocialShareValid=!0,window.EgaGateway.init(EGASocialShareRegister))})();

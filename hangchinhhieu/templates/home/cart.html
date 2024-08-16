@@ -1,0 +1,264 @@
+{% extends "home/base.html" %}
+{% block content %}
+<main class="wrapperMain_content">
+    <div id="layout-cart">
+        <div class="breadcrumb-shop">
+            <div class="container">
+                <div class="breadcrumb-list">
+                    <ol class="breadcrumb breadcrumb-arrows" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a href="/" target="_self" itemprop="item"><span itemprop="name">Trang chủ</span></a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+
+                        <li class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <span itemprop="item" content="/cart"><strong itemprop="name">Giỏ hàng (1)</strong></span>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-mainCart">
+            <div class="content-bodyCart">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 col-xs-12 contentCart-detail">
+                            <div class="mainCart-detail">
+                                <div class="heading-cart"><h1>Giỏ hàng của bạn</h1></div>
+                                <div class="list-pageform-cart">
+                                    <form action="/cart" method="post" id="cartformpage">
+                                        <div class="cart-row">
+                                            <p class="title-number-cart">Bạn đang có <strong class="count-cart">1 sản phẩm</strong> trong giỏ hàng</p>
+                                            <div class="table-cart">
+                                                <div class="media-line-item line-item" data-variant-id="1084896180" data-product-id="1038732694">
+                                                    <div class="media-left">
+                                                        <div class="item-img">
+                                                            <img
+                                                                src="../media/{{request.session.cart.0.Img}}"
+                                                                alt="{{request.session.cart.0.title}}"
+                                                            />
+                                                        </div>
+                                                        <div class="item-remove">
+                                                            <a href="javascript:void(0)" onclick="HRT.Cart.removeItemCart(this,'/cart/change?line=1&amp;quantity=0')">Xóa</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <div class="item-info">
+                                                            <h3 class="item--title">
+                                                                <a href="../media/{{request.session.cart.0.Img}}">
+                                                                    {{request.session.cart.0.title}}
+                                                                </a>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="item-price">
+                                                            <p>
+                                                                <span>{{request.session.cart.0.price | floatformat:"g" }}₫</span>
+
+                                                                <del>29,990,000₫</del>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-total">
+                                                        <div class="item-total-price">
+                                                            <span class="line-item-total">19,990,000₫</span>
+                                                        </div>
+                                                        <div class="item-qty">
+                                                            <div class="qty quantity-partent qty-click clearfix">
+                                                                <button type="button" class="qtyminus qty-btn">-</button>
+                                                                <input
+                                                                    type="text"
+                                                                    size="4"
+                                                                    name="updates[]"
+                                                                    min="1"
+                                                                    productid="1038732694"
+                                                                    id="updates_1084896180"
+                                                                    data-price="1999000000"
+                                                                    value="1"
+                                                                    class="tc line-item-qty item-quantity"
+                                                                />
+                                                                <button type="button" class="qtyplus qty-btn">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-row">
+                                            <div class="order-noted-block">
+                                                <div class="container-pd15">
+                                                    <div class="checkout-buttons clearfix">
+                                                        <label for="note" class="note-label">Ghi chú đơn hàng</label>
+                                                        <textarea class="form-control" id="note" name="note" rows="5"></textarea>
+                                                        <input type="text" class="hidden" name="attributes[Delivery Time]" value="" />
+                                                    </div>
+                                                    <button type="submit" id="update-cart" class="btn-update button hidden" name="update" value="">Cập nhật</button>
+                                                    <button type="submit" id="checkout" class="btn-checkout button hidden" name="checkout" value="">Thanh toán</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-row">
+                                            <div class="order-invoice-block">
+                                                <div class="checkbox">
+                                                    <input type="hidden" name="attributes[invoice]" id="re-checkbox-bill" value="no" />
+                                                    <input type="checkbox" id="checkbox-bill" value="yes" name="regular-checkbox" class="regular-checkbox" />
+                                                    <label for="checkbox-bill" class="box"></label>
+                                                    <label for="checkbox-bill" class="title">Xuất hoá đơn cho đơn hàng</label>
+                                                </div>
+
+                                                <div class="bill-field">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control val-f check_change" name="attributes[bill_order_company]" value="" placeholder="Tên công ty..." />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input
+                                                            type="number"
+                                                            pattern=".{10,}"
+                                                            onkeydown="return HRT.All.FilterInput(event)"
+                                                            onpaste="HRT.All.handlePaste(event)"
+                                                            class="form-control val-f val-n check_change"
+                                                            name="attributes[bill_order_tax_code]"
+                                                            value=""
+                                                            placeholder="Mã số thuế..."
+                                                        />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control val-f val-mail check_change" name="attributes[bill_email]" value="" placeholder="Email..." />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control val-f check_change" name="attributes[bill_order_address]" value="" placeholder="Địa chỉ công ty..." />
+                                                    </div>
+                                                    <div class="form-btn">
+                                                        <a href="javascript:void();" class="button btn-save">Lưu thông tin</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 sidebarCart-sticky">
+                            <div class="mainCart-sidebar wrap-order-summary">
+                                <div class="order-summary-block">
+                                    <h2 class="summary-title">Thông tin đơn hàng</h2>
+
+                                    <div class="summary-time summary-picktime">
+                                        <div class="summary-time__row">
+                                            <div class="boxtime-title">
+                                                <p class="txt-title">Thời gian giao hàng</p>
+                                                <p class="txt-time">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                    <span>Chọn thời gian</span>
+                                                </p>
+                                            </div>
+                                            <div class="boxtime-radio" id="picktime_radio" data-time-start="" data-time-end="">
+                                                <div class="radio-item">
+                                                    <input class="input-radio" type="radio" name="timeRadios" id="timeRadios-1" value="timeNow" />
+                                                    <label class="label-radio" for="timeRadios-1">Giao khi có hàng</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input class="input-radio" type="radio" name="timeRadios" id="timeRadios-2" value="timeDate" />
+                                                    <label class="label-radio" for="timeRadios-2">Chọn thời gian</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="summary-time__row picktime_selecter">
+                                            <div class="boxtime-select">
+                                                <div class="select-choose">
+                                                    <div class="select-box date-option">
+                                                        <label>Ngày giao</label>
+                                                        <div class="select-option">
+                                                            <select id="date_shipping">
+                                                                <option value="18/11/2022">Hôm nay</option>
+                                                                <option value="19/11/2022">19/11/2022</option>
+                                                                <option value="20/11/2022">20/11/2022</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="select-box time-option">
+                                                        <label>Thời gian giao</label>
+                                                        <div class="select-option">
+                                                            <select id="time_shipping">
+                                                                <option data-min="08:00:00" data-max="09:00:00" value="08:00 - 09:00">08:00 - 09:00</option>
+
+                                                                <option data-min="09:00:00" data-max="10:00:00" value="09:00 - 10:00">09:00 - 10:00</option>
+
+                                                                <option data-min="10:00:00" data-max="11:00:00" value="10:00 - 11:00">10:00 - 11:00</option>
+
+                                                                <option data-min="11:00:00" data-max="12:00:00" value="11:00 - 12:00">11:00 - 12:00</option>
+
+                                                                <option data-min="12:00:00" data-max="13:00:00" value="12:00 - 13:00">12:00 - 13:00</option>
+
+                                                                <option data-min="13:00:00" data-max="14:00:00" value="13:00 - 14:00">13:00 - 14:00</option>
+
+                                                                <option data-min="14:00:00" data-max="15:00:00" value="14:00 - 15:00">14:00 - 15:00</option>
+
+                                                                <option data-min="15:00:00" data-max="16:00:00" value="15:00 - 16:00">15:00 - 16:00</option>
+
+                                                                <option data-min="16:00:00" data-max="17:00:00" value="16:00 - 17:00">16:00 - 17:00</option>
+
+                                                                <option data-min="17:00:00" data-max="18:00:00" value="17:00 - 18:00">17:00 - 18:00</option>
+
+                                                                <option data-min="18:00:00" data-max="19:00:00" value="18:00 - 19:00">18:00 - 19:00</option>
+
+                                                                <option data-min="19:00:00" data-max="20:00:00" value="19:00 - 20:00">19:00 - 20:00</option>
+
+                                                                <option data-min="20:00:00" data-max="21:00:00" value="20:00 - 21:00">20:00 - 21:00</option>
+
+                                                                <option data-min="21:00:00" data-max="22:00:00" value="21:00 - 22:00">21:00 - 22:00</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="select-button">
+                                                    <button class="btn-accepttime" id="btn-cart-accepttime">Xác nhận thời gian</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-total">
+                                        <p>Tổng tiền: <span>19,990,000₫</span></p>
+                                    </div>
+                                    <div class="summary-action">
+                                        <p>Phí vận chuyển sẽ được tính ở trang thanh toán.</p>
+                                        <p>Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</p>
+                                        <div class="summary-alert alert alert-danger">
+                                            Giỏ hàng của bạn hiện chưa đạt mức tối thiểu để thanh toán.
+                                        </div>
+                                        <div class="summary-button">
+                                            <a id="btnCart-checkout" class="checkout-btn btnred" data-price-min="10000" data-price-total="19990000" href="{% url 'checkouts' %}">THANH TOÁN </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-summary-block order-summary-notify">
+                                    <div class="summary-warning alert-order">
+                                        <p class="textmr"><strong>Chính sách mua hàng</strong></p>
+                                        <p>Hiện chúng tôi chỉ áp dụng thanh toán với đơn hàng có giá trị tối thiểu <strong>10.000₫ </strong> trở lên.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function unPromote(tmp) {
+            var self = this;
+            tmp += "&note=" + $("#note").val();
+            $.post("/cart", tmp).always(function () {
+                setTimeout(function () {
+                    location.reload();
+                }, 500);
+            });
+        }
+        console.log("");
+
+        document.addEventListener("DOMContentLoaded", function () {
+            HRT.Cart.initQuantityCart();
+        });
+    </script>
+</main>
+{% endblock %}

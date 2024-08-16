@@ -1,0 +1,1 @@
+(function(){"use strict";window.EgaGateway&&window.EGAPromoBoxSettings.general.enabled&&"product"===window.EGAPromoBoxSettings.general.currentTemplate&&window.EGAPromoBoxSettings.general.isShowInThisPage&&(window.egaPromoBoxValid=!0,window.EgaGateway.init(egaPromoBoxRegister))})();

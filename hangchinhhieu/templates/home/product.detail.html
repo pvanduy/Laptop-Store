@@ -1,0 +1,1449 @@
+{% extends "home/base.html" %}
+{% block content %}
+
+{% load static %}
+<script type="text/javascript" src={%static 'js/ega.addon-sales-box.min.js.download'%}></script>
+<main class="wrapperMain_content">
+
+    <div class="layout-productDetail layout-pageProduct">
+        <div class="breadcrumb-shop">
+            <div class="container">
+                <div class="breadcrumb-list">
+                    <ol class="breadcrumb breadcrumb-arrows" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a href="https://hangchinhhieu.vn/" target="_self" itemprop="item"><span itemprop="name">Trang chủ</span></a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+
+                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a href="https://hangchinhhieu.vn/collections/laptop" target="_self" itemprop="item">
+                                <span itemprop="name">Laptop</span>
+                            </a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+
+                        <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <a itemtype="https://schema.org/Thing" itemprop="item" href="https://hangchinhhieu.vn/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h">
+                                <span itemprop="name">{{product.ProductTitle}}</span>
+                            </a>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <section class="productDetail-information productDetail_style__01">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 productDetail--gallery">
+                        <div class="product-container-gallery">
+                            <div class="wrapbox-image">
+                                <div class="productGallery_slider">
+                                    <ul class="productList-slider productCarousel-slider owl-carousel owl-loaded owl-drag" id="productCarousel-slider">
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg1.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg1.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg2.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg2.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg3.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg3.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg4.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg4.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg5.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg5.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg6.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg6.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg7.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg7.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); ">
+                                                <div class="owl-item active current" style="width: 473px;">
+                                                    <li class="product-gallery">
+                                                        <a class="product-gallery__item" data-fancybox="gallery" href="{{product.ProductImg1.url}}">
+                                                            <img
+                                                                src="{{product.ProductImg1.url}}"
+                                                                alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                            />
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="owl-nav">
+                                            <button type="button" role="presentation" class="owl-prev" onclick="plusSlides(-1)"><span aria-label="Previous">‹</span></button>
+                                            <button type="button" role="presentation" class="owl-next" onclick="plusSlides(1)"><span aria-label="Next">›</span></button>
+                                        </div>
+                                        <div class="owl-dots">
+                                            <button role="button" class="owl-dot" onclick="currentSlide(1)"><span></span></button>
+                                            <button role="button" class="owl-dot" onclick="currentSlide(2)"><span></span></button>
+                                            <button role="button" class="owl-dot" onclick="currentSlide(3)"><span></span></button>
+                                            <button role="button" class="owl-dot" onclick="currentSlide(4)"><span></span></button>
+                                            <button role="button" class="owl-dot" onclick="currentSlide(5)"><span></span></button>
+                                            <button role="button" class="owl-dot" onclick="currentSlide(6)"><span></span></button>
+                                            <button role="button" class="owl-dot" onclick="currentSlide(7)"><span></span></button>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product-percent">
+                                <span class="pro-sale">
+                                    -33%<br />
+                                    OFF
+                                </span>
+                            </div>
+
+                            <div class="product-sharing">
+                                <span class="sharing__iconCircleState">
+                                    <span class="sharing__primaryState">
+                                        <svg class="icon icon--share" role="presentation" viewBox="0 0 24 24">
+                                            <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-width="1.5">
+                                                <path d="M8.6,10.2 L15.4,6.8"></path>
+                                                <path d="M8.6,13.7 L15.4,17.1"></path>
+                                                <circle stroke-linecap="square" cx="5" cy="12" r="4"></circle>
+                                                <circle stroke-linecap="square" cx="19" cy="5" r="4"></circle>
+                                                <circle stroke-linecap="square" cx="19" cy="19" r="4"></circle>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sharing__secondaryState">
+                                        <svg class="icon icon--close" role="presentation" viewBox="0 0 16 14"><path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path></svg>
+                                    </span>
+                                </span>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://hangchinhhieu.vn/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h" target="_blank">
+                                    <span class="facebook" aria-hidden="true">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M16.4,1l-3.1,0C9.8,1,9.6,3.3,9.6,6.8v1.7H6.5C6.2,8.5,6,8.8,6,9v1.9c0,0.3,0.2,0.5,0.5,0.5h3.1v9.9c0,0.3,0.2,0.5,0.5,0.5h2c0.3,0,0.5-0.2,0.5-0.5v-9.9h3.6c0.3,0,0.5-0.2,0.5-0.5l0-1.9c0-0.1-0.1-0.3-0.1-0.3c-0.1-0.1-0.2-0.1-0.3-0.1h-3.6V5.3c0-1.1,0.3-1.7,1.7-1.7l2.1,0c0.3,0,0.5-0.2,0.5-0.5V1.5C16.8,1.2,16.6,1,16.4,1z"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="toollip-txt">Chia sẻ facebook</span>
+                                </a>
+                                <a class="sharing__link" onclick="HRT.Product.copyLinkProduct()">
+                                    <span class="url-link" aria-hidden="true">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="toollip-txt">Sao chép url</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 productDetail--content" id="detail-product">
+                        <div class="product-container-detail">
+                            <div class="product-container-order">
+                                <div class="product-variants">
+                                    <form id="add-item-form" action="{% url 'addToCart' %}" method="POST" class="variants clearfix">
+                                        {% csrf_token %}
+                                        <div class="select clearfix">
+                                            <div class="selector-wrapper">
+                                                <span class="custom-dropdown custom-dropdown--white">
+                                                    <select class="single-option-selector custom-dropdown__select custom-dropdown__select--white"  data-option="option1" id="product-select-option-0">
+                                                        <option value="Hàng Chính Hãng">Hàng Chính Hãng</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <select id="product-select" name="id" style="display: none;">
+                                                <option value="1084896180">Hàng Chính Hãng - 19,990,000₫</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-swatch clearfix"></div>
+                                        <div class="select-actions hidden-xs hidden-sm clearfix">
+                                            <div class="quantity-area clearfix">
+                                                <input type="button" value="-" onclick="HRT.All.minusQuantity()" class="qty-btn" />
+                                                <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-input" />
+                                                <input type="button" value="+" onclick="HRT.All.plusQuantity()" class="qty-btn" />
+                                            </div>
+                                            <div class="addcart-area">
+                                                <button type="button" id="buy-now" class="add-to-cartProduct button dark btn-addtocart addtocart-modal" name="add">
+                                                    <span>Mua ngay</span><span>Giao hàng tận nơi hoặc nhận tại cửa hàng</span>
+                                                </button>
+                                                <button type="submit" id="add-to-cart" class="add-to-cartProduct btnred button dark btn-addtocart addtocart-modal" value='{{product.ProductCode}}' name="adtoCart"><span>Thêm vào giỏ</span></button>
+                                                <a href="https://hangchinhhieu.vn/blogs/news/mua-tra-gop-tai-hangchinhhieu-vn-lai-suat-thap-thu-tuc-don-gian" class="button dark text-center btn-tragop">
+                                                    <span>MUA TRẢ GÓP</span>
+                                                    <span>Duyệt hồ sơ trong 5 phút</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="product-heading">
+                                    <h1>{{product.ProductTitle}}</h1>
+                                    <div class="product-reviews">
+                                        <div class="haravan-product-reviews-badge rating-star" data-id="1038732694">
+                                            <div class="hrv-product-reviews-star" data-score="0" data-number="5" title="Not rated yet!">
+                                                <i data-alt="1" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                <i data-alt="2" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                <i data-alt="3" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                <i data-alt="4" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                <i data-alt="5" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i><input name="score" type="hidden" readonly="" />
+                                            </div>
+                                            <p>(0 đánh giá)</p>
+                                        </div>
+                                    </div>
+                                    <ul class="product-meta">
+                                        <li class="pro-sku">Mã sản phẩm: <span>G5 MD-51S1123SO</span></li>
+
+                                        <li class="pro-vendor">
+                                            Thương hiệu:
+                                            <a href="https://hangchinhhieu.vn/collections/vendors?q=gigabyte">GIGABYTE</a>
+                                        </li>
+
+                                        <li class="pro-soldold">
+                                            Tình trạng:
+                                            <span>Còn hàng</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-price" id="price-preview"><span class="pro-percent">-33%</span><del>29,990,000₫</del>
+                                    <span class="pro-price">{{ product.ProductPrice | floatformat:"g" }}₫</span>
+                                </div>
+                            </div>
+                            <div class="product-available">
+                                <p class="txt-inventory"></p>
+                            </div>
+                            <div class="product-coutdown product-coutdown-jsdata"></div>
+
+                            <!-- TAB 1-->
+
+                            <!-- TAB 2-->
+
+                            <!-- TAB 3-->
+
+                            <!-- TAB 3-->
+
+                            <div class="product-description product-description--accordion">
+                                <div class="panel-group bull">
+                                    <!--div class="panel-title"><h2>Tiêu đề Tab</h2>	</div-->
+                                    <div class="panel-description description-content open-over" style="display: block; padding: 10px 0 20px;">
+                                        <ul style="list-style-type: disc;">
+                                            <li><span style="color: #000000;">Bảo hành 24 tháng chính hãng</span></li>
+                                            <li><span style="color: #000000;">Đổi mới sản phẩm trong 7 ngày</span></li>
+                                            <li><span style="color: #000000;">Kho: Hàng có sẵn</span></li>
+                                        </ul>
+                                        <div>
+                                            <span style="color: #000000;">
+                                                <strong><img src={%static 'js/gifbox_compact.png'%} alt="" width="25" height="24" /><span style="color: #ff0000;">Quà tặng:&nbsp;</span></strong>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <ul style="list-style-type: disc;">
+                                                <li><span style="color: #000000;">Balo Gigabyte KIT BAG 17"</span></li>
+                                                <li><span style="color: #000000;">Chuột Gaming Aorus M2 trị giá 590.000đ</span></li>
+                                                <li>
+                                                    <span style="color: #0000ff;">
+                                                        <a style="color: #0000ff;" href="https://hangchinhhieu.vn/blogs/tin-khuyen-mai/uu-dai-nang-cap-ram-ssd-khi-mua-laptop" target="_blank" rel="noopener">
+                                                            Nâng cấp Ram / SSD giảm đến 200.000đ
+                                                        </a>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span style="color: #0000ff;"><a style="color: #0000ff;" href="https://bit.ly/MS-Voucher">Ưu đãi khi mua Microsoft 365 bản quyền</a></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ega-sales-box" style="background-color: rgb(255, 255, 255); border-style: dashed; border-color: rgb(64, 177, 65); border-width: 2px; border-radius: 5px;">
+                                            <div class="ega-sales-box__item">
+                                                <img class="ega-sales-box__left" src={%static 'js/egageneralproductoffers0icon.jpg'%} style="width: 32px;" />
+                                                <div class="ega-sales-box__content">
+                                                    <div>
+                                                        <p>
+                                                            <span style="color: rgb(0, 0, 0); font-size: 14px;"><strong>Mừng Ngày Nhà Giáo Việt Nam 20.11</strong></span>
+                                                        </p>
+                                                        <p>
+                                                            <span style="color: rgb(209, 72, 65); font-size: 14px;"><strong>Laptop giảm giá đến 500.000đ </strong></span>
+                                                            <a href="https://hangchinhhieu.vn/blogs/tin-khuyen-mai/mung-ngay-nha-giao-viet-nam-20-11-hang-chinh-hieu-uu-dai-cuc-soc-danh" target="_blank">
+                                                                <span style="color: rgb(209, 72, 65); font-size: 14px;"><strong>(Xem chi tiết) </strong></span>
+                                                            </a>
+                                                            &nbsp;
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ega-sales-box__item">
+                                                <img class="ega-sales-box__left" src={%static 'js/egageneralproductoffers1icon.png'%} style="width: 32px;" />
+                                                <div class="ega-sales-box__content">
+                                                    <div>
+                                                        <p>
+                                                            <a href="https://hangchinhhieu.vn/blogs/news/mua-tra-gop-tai-hangchinhhieu-vn-lai-suat-thap-thu-tuc-don-gian" target="_blank">
+                                                                <span style="color: rgb(0, 0, 0); font-size: 14px;"><strong>Mua trả góp qua công ty tài chính ACS hoặc thẻ tín dụng: Master Card, Visa, JCB,... </strong></span>
+                                                            </a>
+                                                            &nbsp;
+                                                        </p>
+                                                        <p><span style="color: rgb(0, 0, 0); font-size: 14px;">Phí chuyển đổi trả góp tuỳ ngân hàng </span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ega-sales-box__item">
+                                                <img class="ega-sales-box__left" src={%static 'js/egageneralproductoffers2icon.png'%} style="width: 32px;" />
+                                                <div class="ega-sales-box__content">
+                                                    <div>
+                                                        <p>
+                                                            <span style="color: rgb(0, 0, 0); font-size: 14px;"><strong>Miễn phí giao hàng toàn quốc áp dụng cho hóa đơn trên 5.000.000đ</strong></span>
+                                                        </p>
+                                                        <p>
+                                                            <span style="color: rgb(0, 0, 0); font-size: 14px;">Giao hàng nhanh trong ngày áp dụng với khu vực nội thành <strong>TP.HCM</strong> và <strong>Hà Nội</strong>. </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ega-sales-box__item">
+                                                <img class="ega-sales-box__left" src={%static 'js/egageneralproductoffers3icon.png'%} style="width: 32px;" />
+                                                <div class="ega-sales-box__content">
+                                                    <div>
+                                                        <p>
+                                                            <span style="color: rgb(0, 0, 0); font-size: 14px;"><strong>Hỗ trợ tư vấn nhanh</strong></span>
+                                                        </p>
+                                                        <p>
+                                                            <span style="color: rgb(209, 72, 65); font-size: 14px;"><strong>0906 866 535 (8:30 - 17:30) hoặc 0932 771 486 (8:30 - 24:00)</strong></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a
+                                                    target="_blank"
+                                                    href="https://egany.myharavan.com/blogs/ux-ui-addon/ux-ui-add-ons-bo-sung-tinh-nang-doc-dao-cho-website"
+                                                    style="
+                                                        background-color: #85bf31;
+                                                        color: rgb(255, 255, 255);
+                                                        font-size: 10px;
+                                                        display: flex;
+                                                        padding: 2px 0px;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        max-width: 100%;
+                                                        margin-left: auto;
+                                                        margin-right: auto;
+                                                        margin-top: 5px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="flex: 0 0 16px; height: 16px; background-color: rgb(255, 255, 255); max-width: 16px; border-radius: 50%; text-align: center; line-height: 12px; margin-right: 5px;"
+                                                    >
+                                                        <img src="./product_files/logo-egany_08f96b38b30145e0b6a8f350c8ff6545.png" style="height: 12px; width: 12px;" />
+                                                    </span>
+                                                    <span>Đây là giải pháp trải nghiệm phát triển bởi EGANY</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TAB 0-->
+
+                                <div class="panel-group opened">
+                                    <div class="panel-title"><h2>THông tin sản phẩm</h2></div>
+                                    <div class="panel-description" style="display: block;">
+                                        <div class="description-productdetail typeList-style">
+                                            <h2>
+                                                <span style="color: #000000;">
+                                                    <span style="font-size: 12pt;"><strong>Thông số Gigabyte G5 MD-51S1123SO</strong></span>
+                                                </span>
+                                            </h2>
+                                            <table
+                                                id="tblGeneralAttribute"
+                                                border="1"
+                                                cellspacing="0"
+                                                style="
+                                                    background-color: #ffffff;
+                                                    border-collapse: collapse;
+                                                    border-spacing: 0px;
+                                                    border: 1px solid #eeeeee;
+                                                    box-sizing: border-box;
+                                                    color: #333333;
+                                                    font-family: Roboto, sans-serif;
+                                                    font-size: 13px;
+                                                    line-height: 20px;
+                                                    margin-bottom: 20px;
+                                                    max-width: 100%;
+                                                    min-width: 500px;
+                                                    width: 100%;
+                                                "
+                                                class="mce-item-table table table-bordered"
+                                            >
+                                                <tbody style="box-sizing: border-box;">
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">CPU</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">Intel Core i5-11400H 2.7GHz up to 4.5GHz 12MB</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">RAM</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">16GB (8x2) DDR4 3200MHz&nbsp;(2x SO-DIMM socket, up to 64GB SDRAM)</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Ổ cứng</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">512GB SSD M.2 PCIE G3X4 (Còn trống 1 khe SSD M.2 PCIE và 1 khe&nbsp;2.5" SATA)</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Card đồ họa</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">NVIDIA GeForce RTX 3050Ti 4GB&nbsp;GDDR6&nbsp;Boost Clock 1500 MHz, Maximum Graphics Power 75 W</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Màn hình</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">15.6" FHD (1920 x 1080) IPS, Anti-Glare with 45% NTSC, 144Hz</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Cổng giao tiếp</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">
+                                                                1x USB 3.2 Gen 2 Type-C<br />
+                                                                1x USB3.2 Gen1 Type-A<br />
+                                                                1x USB3.2 Gen2 Type-A<br />
+                                                                1x USB2.0 Type-A<br />
+                                                                1x HDMI 2.0 (with HDCP)<br />
+                                                                1x mini DP 1.4<br />
+                                                                1x Audio combo jack<br />
+                                                                1x Microphone jack<br />
+                                                                1x DC-in Jack<br />
+                                                                1x RJ-45
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Keyboard</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">All-zone of Single Colored Backlit Keyboard with 15 Colors LED Setting</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Audio</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">DTS:X® Ultra</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Đọc thẻ nhớ</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">SD Card Reader</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Chuẩn LAN</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">RTL8411B REALTEK (1G) Ethernet</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Chuẩn WIFI</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">Intel® AX200 Wireless (802.11ax, a/b/g/n/ac/ax compatible)</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Bluetooth</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">V5.2</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Webcam</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">HD Camera</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Hệ điều hành</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">Windows 10 Home</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Pin</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">4 Cell 48.96&nbsp;WHrs</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Trọng lượng</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">2.2 kg</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Màu sắc</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">Black</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="box-sizing: border-box;" class="row-info">
+                                                        <td
+                                                            style="
+                                                                background-color: #f7f7f7 !important;
+                                                                border-color: #eeeeee;
+                                                                border-style: solid;
+                                                                border-width: 1px;
+                                                                box-sizing: border-box;
+                                                                padding: 8px;
+                                                                vertical-align: top;
+                                                                width: 18.5209%;
+                                                            "
+                                                        >
+                                                            <span style="color: #000000;">Kích thước</span>
+                                                        </td>
+                                                        <td style="border-color: #eeeeee; border-style: solid; border-width: 1px; box-sizing: border-box; padding: 8px; vertical-align: top; width: 78.4791%;">
+                                                            <span style="color: #000000;">361 x 258 x 24.9 (mm)</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>
+                                                <span style="color: #000000;">
+                                                    <span style="font-size: 12pt;"><strong>Giới thiệu Gigabyte G5 MD-51S1123SO</strong></span>
+                                                </span>
+                                            </h2>
+                                            <div>
+                                                <h3>
+                                                    <span style="font-size: 16px;"><strong>&nbsp;</strong></span><span style="font-size: 16px;"><strong>Thiết kế tối giản cao cấp, màn hình 15.6 inch ấn tượng</strong></span>
+                                                </h3>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        {{product.ProductInfo}}&nbsp;
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Laptop Gigabyte được trang bị màn hình lớn 15.6 inch, với viền mỏng nhằm tối ưu khả năng quan sát toàn cảnh. Độ phân giải Full HD và tấm nền IPS, tái hiện hình ảnh sắc nét
+                                                        từng chi tiết, để bạn thưởng thức trọn vẹn trò chơi và bộ phim yêu thích dưới góc nhìn 178 độ. Tần số quét 144Hz đảm bảo mọi chuyển động trong trò chơi diễn ra mượt mà trơn
+                                                        tru.&nbsp;
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        HD webcam được tích hợp trên laptop với độ phân giải cao, cung cấp hình ảnh tự nhiên rõ nét để bạn trò chuyện video call, làm việc học tập trực tuyến thoải mái ngay tại nhà
+                                                        qua các ứng dụng như Zoom, Google Meet,...&nbsp;
+                                                    </span>
+                                                </p>
+                                                <h4>
+                                                    <span style="font-size: 16px;"><strong>Cấu hình mạnh mẽ với Intel Core i5-11400H, RAM 16GB, ổ cứng 512GB</strong></span>
+                                                </h4>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Gigabyte MD-51S1123SO sử dụng con chip Intel Core i5-11400H gồm 6 nhân 12 luồng, cho xung nhịp 2.7 GHz - 4.5 GHz, không chỉ cho phép bạn chơi game tốt mà còn mang lại sức
+                                                        mạnh vượt trội để xử lý nhanh gọn các tác vụ văn phòng, hay hỗ trợ chỉnh sửa hình ảnh, render video,... mượt mà.
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        RAM 16GB DDR4 2 khe cung cấp tốc độ 3200MHz đảm bảo khả năng đa nhiệm vượt trội. Bạn có thể nâng cấp bộ nhớ RAM tối đa lên đến 64 GB đáp ứng mọi nhu cầu hiệu năng cao sau
+                                                        này.&nbsp;
+                                                    </span>
+                                                </p>
+                                                <p style="text-align: center;"><img src="./product_files/laptop-gigabyte-g5-gd-51s1123so-022_d8fa35ea3b2946ce9f16d0118877a338_grande.jpg" /></p>
+                                                <h4>
+                                                    <span style="font-size: 16px;"><strong>Chip đồ họa mạnh mẽ, ổ cứng dung lượng lớn</strong></span>
+                                                </h4>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        NVIDIA GeForce RTX 3050Ti cải thiện đáng kể khả năng hiển thị hình ảnh khi chơi game, thiết kế đồ họa. Hiệu năng đồ họa, xử lý AI hiệu quả, đảm bảo không giật lag trong quá
+                                                        trình trải nghiệm.&nbsp;
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Ổ cứng có dung lượng 512GB cung cấp không gian lưu trữ dữ liệu, tải phần mềm thoải mái. Bộ nhớ SSD NVMe PCIe được tích hợp, cung cấp băng thông tốc độ cao, hỗ trợ người
+                                                        dùng truy cập nhanh vào các phần mềm trên máy, rút ngắn thời gian mỗi lần chờ máy khởi động…
+                                                    </span>
+                                                </p>
+                                                <h4>
+                                                    <span style="font-size: 16px;"><strong>Tích hợp nhiều cổng kết nối, nâng cấp Windows 11&nbsp;</strong></span>
+                                                </h4>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Gigabyte G5 MD-51S1123SO cho phép bạn kết nối dễ dàng với các thiết bị ngoại vi xung quanh nhờ các cổng giao tiếp: 1 cổng HDMI, 1 cổng mini DisplayPort, 1 cổng USB Type C,
+                                                        2 cổng USB 3.2, 1 cổng USB 2.0, 1 SD card slot, LAN 1 Gb/s. WiFi 802.11ax (Wifi 6), Bluetooth 5.0 cung cấp tốc độ mạng nhanh chóng, đảm bảo kết nối ổn định, không gián
+                                                        đoạn.&nbsp;
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Laptop Gigabyte cao cấp được cài sẵn hệ điều hành Windows 11, cho phép bạn trải nghiệm trọn vẹn giao diện cải tiến, kho tiện ích phong phú cùng nhiều tính năng khác của
+                                                        Windows bản quyền mà không phải tốn phí.&nbsp;
+                                                    </span>
+                                                </p>
+                                                <h4>
+                                                    <span style="font-size: 16px;"><strong>Bàn phím êm ái hiện đại, cung cấp viên pin rời 49 Wh</strong></span>
+                                                </h4>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Chiếc laptop Gigabyte G5 được trang bị bàn phím với không gian rộng rãi, hạn chế tình trạng nhấn nhầm phím khi chơi hay làm việc. Bàn phím đầy đủ phím số, hỗ trợ cho việc
+                                                        nhập liệu nhanh chóng. Hành trình phím sâu và khả năng phản hồi tốt giúp người dùng chơi game, làm việc thoải mái.&nbsp;
+                                                    </span>
+                                                </p>
+                                                <p style="text-align: center;"><img src="./product_files/b88e75d79e94c91a621ef6454fb22a1e_4144067acf684c4f93dd53a43b781cd2_grande.jpg" /></p>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Dải đèn LED được tích hợp phía dưới các phím giúp tạo sự nổi bật, hỗ trợ người dùng xác định vị trí các phím nhanh chóng trong lúc chơi game hay đang sử dụng laptop trong
+                                                        môi trường thiếu ánh sáng
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span style="font-size: 16px;">
+                                                        Chiếc laptop Gigabyte thế hệ mới được trang bị một viên pin 49 Wh, là dạng pin rời, cho phép người dùng dự trữ các thành pin khác để thay thế dễ dàng mà không cần dây sạc
+                                                        rườm rà. Thời lượng viên pin vừa phải, giúp bạn có thể thoải mái xử lý các công việc không quá nặng.&nbsp;
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TAB 1-->
+
+                                <!-- TAB 2-->
+
+                                <!-- TAB 3-->
+                            </div>
+
+                            <!-- TAB 4-->
+
+                            <div class="product-customer hrv-product-reviews" id="hrv-product-reviews" data-id="1038732694">
+                                <span itemscope="" itemtype="http://schema.org/Product">
+                                    <meta itemprop="name" content="Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11)" />
+                                    <meta itemprop="sku" content="G5 MD-51S1123SO" />
+                                    <meta itemprop="mpn" content="1038732694" />
+                                    <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope="">
+                                        <meta itemprop="name" content="GIGABYTE" />
+                                    </div>
+                                    <meta
+                                        itemprop="description"
+                                        content="Laptop Gaming Gigabyte G5 MD-51S1123SO phiên bản mới 2022 với chip Intel Core i5-11400H và VGA RTX 3050Ti hiệu năng vô cùng mạnh mẽ. Gigabyte G5 với công nghệ tản nhiệt WINDFORCE cũng được GIGABYTE nhắc đến như là vũ khí giúp giải quyết các vấn đề về nhiệt độ của Laptop khi sử dụng với cường độ cao."
+                                    />
+                                    <meta itemprop="image" content="https://product.hstatic.net/1000233206/product/gigabyte-g5-md-51s1123so-i5-11400h_51dae1f2223e4444b993e8fc6bfff111.png" />
+                                    <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="VND" />
+                                        <meta itemprop="priceValidUntil" content="2022-11-17 " />
+                                        <link itemprop="url" href="https://hangchinhhieu.vn/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h" />
+                                        <meta itemprop="price" content="19990000" />
+                                        <link itemprop="itemCondition" href="http://schema.org/NewCondition" />
+                                        <link itemprop="availability" href="http://schema.org/InStock" />
+                                    </span>
+                                    <div class="product-customer-reviews">
+                                        <h2 class="hrv-product-reviews-heading">Khách hàng nhận xét</h2>
+                                        <div class="hrv-product-reviews-summary" id="hrv-product-reviews-summary">
+                                            <div style="text-align: center;">
+                                                <div class="hrv-product-reviews-star" data-score="0" data-number="5" title="Not rated yet!">
+                                                    <i data-alt="1" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                    <i data-alt="2" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                    <i data-alt="3" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                    <i data-alt="4" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                    <i data-alt="5" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i><input name="score" type="hidden" readonly="" />
+                                                </div>
+                                                <span>(0 đánh giá)</span>
+                                            </div>
+                                        </div>
+                                        <span class="product-reviews-summary-actions"><input type="button" id="btnnewreview" value="Viết đánh giá" /></span>
+                                        <div class="hrv-product-reviews-form" id="hrv-product-reviews-form" style="display: none;">
+                                            <h3>Viết đánh giá mới</h3>
+                                            <form id="hrv-product-reviews-frm" name="hrv-product-reviews-frm">
+                                                <fieldset>
+                                                    <div id="dvName">
+                                                        <label>Tên</label><input id="hrv_product_reviews_form_name" type="text" placeholder="Tên của bạn (&gt;3 ký tự và &lt; 20 ký tự)" autocomplete="off" />
+                                                        <div id="msg_name" style="display: none; color: red; margin-top: 10px;">Tên của bạn phải từ 3 đến 20 ký tự, vui lòng nhập lại.</div>
+                                                        <div id="msg_name_validate" style="display: none; color: red; margin-top: 10px;">Tên của bạn không hợp lệ, vui lòng nhập lại.</div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div id="dvEmail">
+                                                        <label>Email</label><input id="hrv_product_reviews_form_email" type="text" placeholder="john.smith@example.com" autocomplete="off" />
+                                                        <div id="msg_email" style="display: none; color: red; margin-top: 10px;">Email không đúng định dạng, vui lòng nhập lại.</div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset id="hrv_product_reviews_form_fieldset_rate">
+                                                    <label>Đánh giá</label>
+                                                    <div id="dvRating" style="cursor: pointer; color: rgb(236, 186, 85);">
+                                                        <i data-alt="1" class="star-on-png" title="bad"></i>&nbsp;<i data-alt="2" class="star-on-png" title="poor"></i>&nbsp;
+                                                        <i data-alt="3" class="star-on-png" title="regular"></i>&nbsp;<i data-alt="4" class="star-on-png" title="good"></i>&nbsp;
+                                                        <i data-alt="5" class="star-on-png" title="gorgeous"></i><input name="score" type="hidden" value="5" />
+                                                    </div>
+                                                    <input type="hidden" id="hrv_product_reviews_form_rate" value="5" /><input type="hidden" id="hrv_product_reviews_form_shop" value="hangchinhhieu.myharavan.com" />
+                                                    <input type="hidden" id="hrv_product_reviews_form_fullshop" value="https://hangchinhhieu.vn/" /><input type="hidden" id="hrv_product_reviews_form_product" value="1038732694" />
+                                                    <input type="hidden" id="hrv_product_reviews_form_callback" value="https://hangchinhhieu.vn/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h" />
+                                                    <input type="hidden" id="hrv_product_reviews_form_product_name" value="laptop-gigabyte-g5-md-51s1123so-i5-11400h" />
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div id="dvTitle">
+                                                        <label>Tiêu đề</label><input id="hrv_product_reviews_form_title" type="text" placeholder="Hãy cho một tiêu đề (&gt;3 ký tự và &lt; 50 ký tự)" autocomplete="off" />
+                                                        <div id="msg_title" style="display: none; color: red; margin-top: 10px;">Độ dài tiêu đề phải từ 3 đến 50 ký tự, vui lòng nhập lại.</div>
+                                                        <div id="msg_title_validate" style="display: none; color: red; margin-top: 10px;">Tiêu đề của bạn không hợp lệ, vui lòng nhập lại.</div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div id="dvBody">
+                                                        <label>Nội dung</label> <label id="dvBody_character"></label>
+                                                        <textarea id="hrv_product_reviews_form_body" rows="10" placeholder="Viết nội dung đánh giá ở đây (&gt;3 ký tự và &lt; 1000 ký tự)"></textarea>
+                                                        <div id="msg_body" style="display: none; color: red; margin-top: 10px;">Độ dài nội dung phải từ 3 đến 1000 ký tự, vui lòng nhập lại.</div>
+                                                        <div id="msg_body_validate" style="display: none; color: red; margin-top: 10px;">Nội dung của bạn không hợp lệ, vui lòng nhập lại.</div>
+                                                    </div>
+                                                </fieldset>
+                                                <p class="error"></p>
+                                                <input type="submit" id="btnSubmitReview" value="Gửi đánh giá" width="80" />
+                                            </form>
+                                            <br />
+                                        </div>
+                                        <div class="hrv-product-reviews-form" id="hrv-product-reviews-thanks" style="display: none; padding-top: 20px;">
+                                            <center>
+                                                <b>Cám ơn bạn đã đánh giá sản phẩm!</b>
+                                                <center></center>
+                                            </center>
+                                        </div>
+                                        <br />
+                                        <div class="hrv-product-reviews-list" id="hrv-product-reviews-list"></div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- related -->
+        <section class="productDetail-listprod productDetail-viewed">
+            <div class="container">
+                <div class="listprod-title"><h2>Sản phẩm đã xem</h2></div>
+                <div class="listprod-content">
+                    <div class="listProduct-viewed listProduct-resize owl-carousel owlCarousel-style owl-loaded owl-drag" id="owlProduct-viewed">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 693px;">
+                                <div class="owl-item active" style="width: 216px; margin-right: 15px;">
+                                    <div class="product-loop" data-id="1084896180">
+                                        <div class="product-inner product-resize fixheight" style="height: 339px;">
+                                            <div class="proloop-image">
+                                                <div class="pro-sale"><span>-33%</span></div>
+
+                                                <div class="product--image image-resize" style="height: auto;">
+                                                    <div class="product--image__inner">
+                                                        <div class="prod-img first-image">
+                                                            <picture>
+                                                                <source
+                                                                    media="(max-width: 480px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/gigabyte-g5-md-51s1123so-i5-11400h_51dae1f2223e4444b993e8fc6bfff111_medium.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <source
+                                                                    media="(min-width: 481px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/gigabyte-g5-md-51s1123so-i5-11400h_51dae1f2223e4444b993e8fc6bfff111_large.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <img
+                                                                    class="lazyload img-loop"
+                                                                    data-src="//product.hstatic.net/1000233206/product/gigabyte-g5-md-51s1123so-i5-11400h_51dae1f2223e4444b993e8fc6bfff111_large.png"
+                                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                    alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                                />
+                                                            </picture>
+                                                        </div>
+                                                        <div class="prod-img second-image hovered-img hidden-xs">
+                                                            <picture>
+                                                                <source
+                                                                    media="(max-width: 480px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/gigabyte-g5-md-51s1123so-i5-11400h-1_d5f7a6a7e5f04fc599e76c3214a41ed2_small.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <source
+                                                                    media="(min-width: 481px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/gigabyte-g5-md-51s1123so-i5-11400h-1_d5f7a6a7e5f04fc599e76c3214a41ed2_large.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <img
+                                                                    class="lazyload img-loop"
+                                                                    data-src="//product.hstatic.net/1000233206/product/gigabyte-g5-md-51s1123so-i5-11400h-1_d5f7a6a7e5f04fc599e76c3214a41ed2_large.png"
+                                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                    alt=" Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11) "
+                                                                />
+                                                            </picture>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a
+                                                    href="https://hangchinhhieu.vn/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h"
+                                                    class="proloop-link"
+                                                    data-handle="/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h"
+                                                    title="Laptop Gigabyte G5 MD-51S1123SO (i5-11400H | 16GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6&#39; FHD 144Hz | Win 11)"
+                                                ></a>
+                                            </div>
+                                            <div class="proloop-detail">
+                                                <h3>
+                                                    <a href="https://hangchinhhieu.vn/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h" class="" >
+                                                        {{product.Title}}
+                                                    </a>
+                                                </h3>
+
+                                                <p class="proloop--price">
+                                                    <span class="price">19,990,000₫</span>
+
+                                                    <span class="price-del">29,990,000₫</span>
+                                                </p>
+                                                <div class="proloop--review">
+                                                    <!--  check review -->
+
+                                                    <div class="haravan-product-reviews-badge" data-id="1038732694">
+                                                        <div class="hrv-product-reviews-star" data-score="0" data-number="5" title="Not rated yet!">
+                                                            <i data-alt="1" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="2" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="3" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="4" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="5" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i><input name="score" type="hidden" readonly="" />
+                                                        </div>
+                                                        <p>(0 đánh giá)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 216px; margin-right: 15px;">
+                                    <div class="product-loop" data-id="1088924490">
+                                        <div class="product-inner product-resize fixheight" style="height: 339px;">
+                                            <div class="proloop-image">
+                                                <div class="pro-sale"><span>-18%</span></div>
+
+                                                <div class="product--image image-resize" style="height: auto;">
+                                                    <div class="product--image__inner">
+                                                        <div class="prod-img first-image">
+                                                            <picture>
+                                                                <source
+                                                                    media="(max-width: 480px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/msi-modern-15-a5m-234vn_5985cb29ee884b3fa3d5c36c29db8279_medium.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <source
+                                                                    media="(min-width: 481px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/msi-modern-15-a5m-234vn_5985cb29ee884b3fa3d5c36c29db8279_large.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <img
+                                                                    class="lazyload img-loop"
+                                                                    data-src="//product.hstatic.net/1000233206/product/msi-modern-15-a5m-234vn_5985cb29ee884b3fa3d5c36c29db8279_large.png"
+                                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                    alt=" Laptop MSI Modern 15 A5M-234VN (R5-5500U | 8GB | 512GB | AMD Radeon Graphics | 15.6&#39; FHD | Win 11) "
+                                                                />
+                                                            </picture>
+                                                        </div>
+                                                        <div class="prod-img second-image hovered-img hidden-xs">
+                                                            <picture>
+                                                                <source
+                                                                    media="(max-width: 480px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/msi-modern-15-a5m-234vn-r5-5500u_6e7a746c33254443a86967770e973157_small.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <source
+                                                                    media="(min-width: 481px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/msi-modern-15-a5m-234vn-r5-5500u_6e7a746c33254443a86967770e973157_large.png"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <img
+                                                                    class="lazyload img-loop"
+                                                                    data-src="//product.hstatic.net/1000233206/product/msi-modern-15-a5m-234vn-r5-5500u_6e7a746c33254443a86967770e973157_large.png"
+                                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                    alt=" Laptop MSI Modern 15 A5M-234VN (R5-5500U | 8GB | 512GB | AMD Radeon Graphics | 15.6&#39; FHD | Win 11) "
+                                                                />
+                                                            </picture>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a
+                                                    href="https://hangchinhhieu.vn/products/laptop-msi-modern-15-a5m-234vn-r5-5500u"
+                                                    class="proloop-link"
+                                                    data-handle="/products/laptop-msi-modern-15-a5m-234vn-r5-5500u"
+                                                    title="Laptop MSI Modern 15 A5M-234VN (R5-5500U | 8GB | 512GB | AMD Radeon Graphics | 15.6&#39; FHD | Win 11)"
+                                                ></a>
+                                            </div>
+                                            <div class="proloop-detail">
+                                                <h3>
+                                                    <a href="https://hangchinhhieu.vn/products/laptop-msi-modern-15-a5m-234vn-r5-5500u" class="" data-handle="/products/laptop-msi-modern-15-a5m-234vn-r5-5500u">
+                                                        Laptop MSI Modern 15 A5M-234VN (R5-5500U | 8GB | 512GB | AMD Radeon Graphics | 15.6' FHD | Win 11)
+                                                    </a>
+                                                </h3>
+
+                                                <p class="proloop--price">
+                                                    <span class="price">13,990,000₫</span>
+
+                                                    <span class="price-del">16,990,000₫</span>
+                                                </p>
+                                                <div class="proloop--review">
+                                                    <!--  check review -->
+
+                                                    <div class="haravan-product-reviews-badge" data-id="1040787643">
+                                                        <div id="hrv-prv-summary-star" class="hrv-product-reviews-star" data-score="0" data-number="5" title="Not rated yet!">
+                                                            <i data-alt="1" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="2" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="3" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="4" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="5" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i><input name="score" type="hidden" readonly="" />
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 216px; margin-right: 15px;">
+                                    <div class="product-loop" data-id="1087885639">
+                                        <div class="product-inner product-resize fixheight" style="height: 339px;">
+                                            <div class="proloop-image">
+                                                <div class="pro-sale"><span>-29%</span></div>
+
+                                                <div class="product--image image-resize" style="height: auto;">
+                                                    <div class="product--image__inner">
+                                                        <div class="prod-img first-image">
+                                                            <picture>
+                                                                <source
+                                                                    media="(max-width: 480px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/untitled-1_b99d0846f3b64a949439feff7121fb39_medium.jpg"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <source
+                                                                    media="(min-width: 481px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/untitled-1_b99d0846f3b64a949439feff7121fb39_large.jpg"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <img
+                                                                    class="lazyload img-loop"
+                                                                    data-src="//product.hstatic.net/1000233206/product/untitled-1_b99d0846f3b64a949439feff7121fb39_large.jpg"
+                                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                    alt=" Màn Hình Di Động LG Gram View 16MQ70.ASDA5 16 inch 2K WQXGA (2560 x 1600) IPS "
+                                                                />
+                                                            </picture>
+                                                        </div>
+                                                        <div class="prod-img second-image hovered-img hidden-xs">
+                                                            <picture>
+                                                                <source
+                                                                    media="(max-width: 480px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/16mq70_c1f4aeda1bba40e6a6cf43c4a5b38f93_small.jpg"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <source
+                                                                    media="(min-width: 481px)"
+                                                                    data-srcset="//product.hstatic.net/1000233206/product/16mq70_c1f4aeda1bba40e6a6cf43c4a5b38f93_large.jpg"
+                                                                    srcset="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                />
+                                                                <img
+                                                                    class="lazyload img-loop"
+                                                                    data-src="//product.hstatic.net/1000233206/product/16mq70_c1f4aeda1bba40e6a6cf43c4a5b38f93_large.jpg"
+                                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                                    alt=" Màn Hình Di Động LG Gram View 16MQ70.ASDA5 16 inch 2K WQXGA (2560 x 1600) IPS "
+                                                                />
+                                                            </picture>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a
+                                                    href="https://hangchinhhieu.vn/products/man-hinh-di-dong-lg-gram-16mq70-asda5-16-2k-wqxga-2560-x-1600-ips"
+                                                    class="proloop-link"
+                                                    data-handle="/products/man-hinh-di-dong-lg-gram-16mq70-asda5-16-2k-wqxga-2560-x-1600-ips"
+                                                    title="Màn Hình Di Động LG Gram View 16MQ70.ASDA5 16 inch 2K WQXGA (2560 x 1600) IPS"
+                                                ></a>
+                                            </div>
+                                            <div class="proloop-detail">
+                                                <h3>
+                                                    <a
+                                                        href="https://hangchinhhieu.vn/products/man-hinh-di-dong-lg-gram-16mq70-asda5-16-2k-wqxga-2560-x-1600-ips"
+                                                        class=""
+                                                        data-handle="/products/man-hinh-di-dong-lg-gram-16mq70-asda5-16-2k-wqxga-2560-x-1600-ips"
+                                                    >
+                                                        Màn Hình Di Động LG Gram View 16MQ70.ASDA5 16 inch 2K WQXGA (2560 x 1600) IPS
+                                                    </a>
+                                                </h3>
+
+                                                <p class="proloop--price">
+                                                    <span class="price">6,990,000₫</span>
+
+                                                    <span class="price-del">9,890,000₫</span>
+                                                </p>
+                                                <div class="proloop--review">
+                                                    <!--  check review -->
+
+                                                    <div class="haravan-product-reviews-badge" data-id="1040363407">
+                                                        <div class="hrv-product-reviews-star" data-score="0" data-number="5" title="Not rated yet!">
+                                                            <i data-alt="1" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="2" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="3" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="4" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i>&nbsp;
+                                                            <i data-alt="5" class="star-off-png" title="Not rated yet!" style="color: rgb(236, 186, 85);"></i><input name="score" type="hidden" readonly="" />
+                                                        </div>
+                                                        <p>(0 đánh giá)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav disabled">
+                            <button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button>
+                            <button type="button" role="presentation" class="owl-next disabled"><span aria-label="Next">›</span></button>
+                        </div>
+                        <div class="owl-dots disabled"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- genneral -->
+        <section class="productDetail-toolbar visible-sm visible-xs" id="product-toolbar">
+            <div class="productToolbar-addcart">
+                <div class="container">
+                    <div class="product-actions">
+                        <div class="block-quantity quantity-selector">
+                            <input type="button" value="-" onclick="HRT.All.minusQuantity()" class="qty-btn" />
+                            <input type="text" id="quantity-bottom" name="quantity" value="1" min="1" class="quantity-number" />
+                            <input type="button" value="+" onclick="HRT.All.plusQuantity()" class="qty-btn" />
+                        </div>
+                        <div class="block-addcart">
+                            <button type="button" id="add-to-cartBottom" class="add-to-cartProduct btnred button dark btn-addtocart addtocart-modal" name="add"><span>Thêm vào giỏ</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="productDetail-linkcopy"><input class="linkToCopy" readonly="readonly" value="https://hangchinhhieu.vn/products/laptop-gigabyte-g5-md-51s1123so-i5-11400h" id="myInput" /></div>
+    </div>
+
+</main>
+<style>
+    /* ---------- Inspired Footer --------- */
+    footer#insFooter {
+        background: #e6e6e6;
+        margin-top: 30px;
+    }
+    .topFooter {
+        padding: 30px 0px;
+    }
+    .insFooter.styleNew .topFooter {
+        background: #0772bb;
+        color: #f1f1f1;
+    }
+    .insFooter h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        width: 100%;
+        background: url(dash-double-footer.png) bottom repeat-x;
+        text-transform: uppercase;
+    }
+    .insFooter.styleNew h4 {
+        background: transparent;
+        color: #eaeaea;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .insFooter.styleNew .topFooter a {
+        color: #eaeaea;
+    }
+    .insFooter.styleNew .topFooter a:hover {
+        color: #f9f9f9;
+        text-decoration: underline;
+    }
+    .colRightFTTop {
+        margin-bottom: 20px;
+    }
+    .insFooter .ftNewsletter {
+        margin-top: 20px;
+    }
+    .colRightFTTop .fi-title1 {
+        margin-bottom: 20px;
+    }
+    .ftShopInfo .col50 {
+        width: 50%;
+        float: left;
+        padding-right: 10px;
+    }
+    .ftSocial li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .ftSocial li a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #3b5998;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .ftSocial li:nth-child(2) a {
+        background: #28aae1;
+    }
+    .ftSocial li:nth-child(3) a {
+        background: #dd4b38;
+    }
+    .ftSocial li:nth-child(4) a {
+        background: #dc2925;
+    }
+    .ftSocial li:nth-child(5) a {
+        background: #5d4942;
+    }
+    .insFooter .ftNewsletter h4 {
+        display: inline-block;
+        width: auto;
+        padding-right: 20px;
+        line-height: 1.5;
+    }
+    .ftNewsletter input[type="email"] {
+        width: 200px;
+        height: 33px;
+        display: block;
+        border: 1px #928b8b solid;
+        float: left;
+        font-size: 13px;
+        background: none;
+        color: #9a9b9e;
+        padding: 0 10px;
+    }
+    .ftNewsletter button.button {
+        height: 33px;
+        background: #9a9b9e;
+        width: 100px;
+        cursor: pointer;
+        color: #f1f1f1;
+        text-transform: none;
+        border: 1px #928b8b solid;
+        border-left: none;
+        outline: none;
+    }
+    .bottomFooter {
+        background: #f1f1f1;
+    }
+    .insFooter.styleNew .bottomFooter {
+        background: #045288;
+        color: #f1f1f1;
+    }
+    .mainBottomFooter {
+        padding: 20px 0px;
+        //background: url(dash-double-footer.png) top repeat-x;
+    }
+    .mainBottomFooter .copy p {
+        margin: 0;
+    }
+    .mainBottomFooter .logo-ft-1 {
+        margin: 5px 20px 0px 0px;
+    }
+    .mainBottomFooter .logo-ft-1 img {
+        max-width: 200px;
+    }
+    .colRightFTPay img {
+        max-height: 30px;
+        margin-top: 10px;
+    }
+    .ftCopyright {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+    /* ---------- END Inspired Footer --------- */
+</style>
+<script type="text/javascript" src={%static 'js/slide.product.js'%}></script>
+{% endblock %}

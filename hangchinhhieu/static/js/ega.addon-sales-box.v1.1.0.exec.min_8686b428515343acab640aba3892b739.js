@@ -1,0 +1,1 @@
+(function(){"use strict";window.EgaGateway&&window.EGASalesBoxSettings.general.enabled&&"product"===window.EGASalesBoxSettings.general.currentTemplate&&window.EGASalesBoxSettings.general.isShowInThisPage&&(window.egaSalesBoxValid=!0,window.EgaGateway.init(egaSalesBoxRegister))})();
